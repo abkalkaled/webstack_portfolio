@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - QUIKData</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a href="file:///C:/Users/DHQ/Desktop/tttt/index.html" class="logo"
+      >QUIKData</a
+    >
+    <main class="auth-page">
+      <div class="auth-container">
+        <h1 class="auth-title">Create an Account</h1>
+        <p class="auth-subtitle">Sign up to get started</p>
+        <form id="signup-form" class="auth-form">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="number">Phone number</label>
+          <input
+            type="number"
+            id="number"
+            name="phone"
+            placeholder="08123456789"
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Create a password"
+            required
+          />
+
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Confirm your password"
+            required
+          />
+
+          <button type="submit" class="cta-btn">Sign Up</button>
+        </form>
+        <p class="auth-footer">
+          Already have an account? <a href="login.html">Login</a>
+        </p>
+      </div>
+    </main>
+    <!--script-->
+    <script src="scripts.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"></script>
+  </body>
+</html>
