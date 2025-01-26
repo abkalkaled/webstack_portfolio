@@ -1,0 +1,897 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: #e0b72f;
+  padding: 10px 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d97706;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #d97706;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #333;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #f59e0b;
+  padding: 5px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.login-btn:hover {
+  background-color: #fde68a;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #f59e0b;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  color: #555;
+}
+
+.cta-btn {
+  background-color: #f59e0b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #d97706;
+}
+
+/* Features Section */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.feature-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  color: #f59e0b;
+}
+
+/* Plans Section */
+
+.plans {
+  text-align: center;
+  display: flex;
+  padding: 20px;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  min-width: 20%;
+}
+
+.plan-card h3 {
+  font-size: 1.25rem;
+  color: #f59e0b;
+}
+
+.buy-btn {
+  background-color: #f59e0b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+  background-color: #d97706;
+}
+
+/* Footer */
+.footer {
+  background-color: #e0b72f;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+}
+
+/* *******wallet */
+
+/* Wallet Page Styles */
+.wallet-balance {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wallet-balance h1 {
+  font-size: 2rem;
+  color: #f59e0b;
+}
+
+.balance-box {
+  margin-top: 20px;
+}
+
+.balance-box p {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.balance-box h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #10b981;
+}
+
+/* Fund Wallet Section */
+.fund-wallet {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fund-wallet h2 {
+  color: #f59e0b;
+}
+
+.fund-form {
+  margin-top: 20px;
+}
+
+.fund-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.fund-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.fund-form button {
+  width: 100%;
+}
+
+/* Transaction History */
+.transaction-history {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.transaction-table td {
+  color: #555;
+}
+
+.transaction-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/*********DATA PLAN*****/
+
+/* Data Plans Page Styles */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fcd34d;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  color: #f9fafb;
+}
+
+/* Plans Section */
+.plans {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.plan-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 300px;
+}
+
+.plan-card h3 {
+  font-size: 1.5rem;
+  color: #f59e0b;
+}
+
+.plan-card p {
+  color: #555;
+  margin: 10px 0;
+}
+
+.plan-card .buy-btn {
+  background-color: #f59e0b;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.plan-card .buy-btn:hover {
+  background-color: #d97706;
+}
+
+/* Custom Plans Section */
+.custom-plans {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-plans h2 {
+  color: #f59e0b;
+}
+
+.custom-plan-form {
+  margin-top: 20px;
+}
+
+.custom-plan-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.custom-plan-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.custom-plan-form button {
+  width: 100%;
+}
+
+/****TRANSCATION****/
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fcd34d;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.hero p {
+  margin: 10px 0 20px;
+  color: #f9fafb;
+}
+
+/* Transaction History Section */
+.transaction-history {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-history h2 {
+  text-align: center;
+  color: #f59e0b;
+  margin-bottom: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-table th {
+  background-color: #f59e0b;
+  color: #fff;
+}
+
+.transaction-table td {
+  color: #555;
+}
+
+.transaction-table tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Table Status Colors */
+.transaction-table td:last-child {
+  font-weight: bold;
+}
+
+.transaction-table td:last-child:contains("Successful") {
+  color: #10b981; /* Green for success */
+}
+
+.transaction-table td:last-child:contains("Pending") {
+  color: #f59e0b; /* Amber for pending */
+}
+
+.transaction-table td:last-child:contains("Failed") {
+  color: #ef4444; /* Red for failed */
+}
+
+/*****LOGIN AND SIGN UP****/
+
+/* Auth Page Styles */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.auth-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+.auth-title {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+
+.auth-subtitle {
+  color: #6b7280;
+  margin-bottom: 30px;
+}
+
+.auth-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  color: #4b5563;
+  font-size: 0.9rem;
+}
+
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
+}
+
+.auth-footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.auth-footer a {
+  color: #f59e0b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/***USERS DASHBOARD****/
+/* Dashboard Styles */
+.dashboard {
+  margin: 40px auto;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Profile Section */
+.profile-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  color: #f59e0b;
+}
+
+.profile-email {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/* Wallet Card */
+.wallet-card {
+  background-color: #f59e0b;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.wallet-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.wallet-balance {
+  font-size: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.wallet-card .cta-btn {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #f59e0b;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.wallet-card .cta-btn:hover {
+  background-color: #ffd78e;
+}
+
+/* Quick Action Links */
+.action-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.action-card {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+}
+
+.action-card h3 {
+  color: #f59e0b;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+a.action-card {
+  text-decoration: none;
+}
+
+.action-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+/****LANDING PAGE****/
+
+/* Logout Page Styles */
+.logout-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.logout-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.logout-title {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+
+.logout-message {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.logout-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cta-btn {
+  background-color: #f59e0b;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.cta-btn:hover {
+  background-color: #d97706;
+}
+
+.secondary-btn {
+  background-color: #e5e7eb;
+  color: #6b7280;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.secondary-btn:hover {
+  background-color: #d1d5db;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+}
+
+/* Header */
+.header {
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffdd57;
+}
+
+/* Main Section */
+.purchase-section,
+.admin-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.purchase-section h1,
+.admin-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #f59e0b;
+}
+
+/* Form Styling */
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form input:focus,
+form select:focus {
+  outline: none;
+}
+
+.cta-btn {
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table thead {
+  background: #007bff;
+  color: white;
+}
+
+table th,
+table td {
+  padding: 0.8rem;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table tbody tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+table tbody tr:hover {
+  background: #f1f1f1;
+}
+
+button.approve-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.approve-btn:hover {
+  background: #218838;
+}
+
+button.reject-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button.reject-btn:hover {
+  background: #c82333;
+}
+
+/*ADMIN LOGIN*/
+
+/* Login Section */
+.admin-login {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 100px auto;
+  text-align: center;
+}
+
+.admin-login h1 {
+  font-size: 2rem;
+  color: #f59e0b;
+  margin-bottom: 1.5rem;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .admin-login {
+    padding: 1.5rem;
+  }
+
+  .admin-login h1 {
+    font-size: 1.5rem;
+  }
+}
+
