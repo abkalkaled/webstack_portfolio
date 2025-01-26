@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Plans - QUIKData</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="file:///C:/Users/DHQ/Desktop/tttt/index.html" class="logo"
+          >QUIKData</a
+        >
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="wallet.html">Wallet</a></li>
+          <li><a href="transactions.html">Transaction</a></li>
+          <li><a href="#logout" class="login-btn">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1>Choose Your Data Plan</h1>
+        <p>
+          Find the best plan that suits your browsing needs. Affordable and
+          reliable!
+        </p>
+      </section>
+
+      <!-- Popular Plans Section -->
+      <section id="popular-plans" class="plans">
+        <h2>Popular Data Plans</h2>
+        <div class="plan-card">
+          <h3>1GB - ₦300</h3>
+          <p>Valid for 7 days</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="plan-card">
+          <h3>2GB - ₦500</h3>
+          <p>Valid for 14 days</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="plan-card">
+          <h3>5GB - ₦1200</h3>
+          <p>Valid for 30 days</p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </section>
+
+      <!-- Custom Plans Section -->
+      <section id="custom-plans" class="custom-plans">
+        <h2>Custom Plans</h2>
+        <form class="custom-plan-form">
+          <label for="custom-amount">Enter Amount (₦):</label>
+          <input
+            type="number"
+            id="custom-amount"
+            name="custom-amount"
+            placeholder="e.g., 2000"
+            required
+          />
+          <button type="submit" class="cta-btn">Create Plan</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Contact Us: support@quikdata.com</p>
+      <p>&copy; 2024 QUIKData Services. All rights reserved.</p>
+    </footer>
+    <!--script-->
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
