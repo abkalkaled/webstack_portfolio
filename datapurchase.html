@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Purchase</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo">QUIKData</a>
+        <ul class="nav-links">
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="wallet.html">Wallet</a></li>
+          <li><a href="transactions.html">Transaction History</a></li>
+          <li><a href="logout.html" class="logout-btn">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="purchase-section">
+      <h1>Buy Data</h1>
+      <form id="purchase-form">
+        <label for="network">Select Network:</label>
+        <select id="network" name="network" required>
+          <option value="MTN">MTN</option>
+          <option value="Airtel">Airtel</option>
+          <option value="Glo">Glo</option>
+          <option value="9mobile">9mobile</option>
+        </select>
+
+        <label for="plan">Select Data Plan:</label>
+        <select id="plan" name="plan" required>
+          <option value="500MB">₦200 - 500MB</option>
+          <option value="1GB">₦500 - 1GB</option>
+          <option value="2GB">₦1000 - 2GB</option>
+          <option value="5GB">₦2500 - 5GB</option>
+        </select>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <button type="submit" class="cta-btn">Buy Data</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p>Contact Us: support@quikdata.com</p>
+      <p>&copy; 2024 QUIKData Services. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+
