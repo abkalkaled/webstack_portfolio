@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Username</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo">QUIKData</a>
+        <ul class="nav-links">
+          <li><a href="dataplan.html">Data Plans</a></li>
+          <li><a href="transactions.html">Transaction History</a></li>
+          <li><a href="wallet.html">Wallet</a></li>
+          <li>
+            <a href="logout.html" id="logout-btn" class="logout-btn">Logout</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="dashboard">
+      <!-- User Profile Section -->
+      <section class="profile-section">
+        <div class="profile-card">
+          <h1 class="profile-name">Abkal Carhlead</h1>
+          <p class="profile-email">abkalkaled@gmail.com</p>
+        </div>
+      </section>
+
+      <!-- Wallet and Quick Actions -->
+      <section class="quick-actions">
+        <div class="wallet-card">
+          <h2>Wallet Balance</h2>
+          <p class="wallet-balance">₦5,000</p>
+          <button class="cta-btn">Fund Wallet</button>
+        </div>
+
+        <div class="action-links">
+          <a href="dataplan.html" class="action-card">
+            <h3>Buy Data</h3>
+            <p>Purchase affordable data plans</p>
+          </a>
+          <a href="transactions.html" class="action-card">
+            <h3>Transaction History</h3>
+            <p>View your past transactions</p>
+          </a>
+          <a href="wallet.html" class="action-card">
+            <h3>Wallet</h3>
+            <p>Manage your wallet balance</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Contact Us: support@quikdata.com</p>
+      <p>&copy; 2024 QUIKData Services. All rights reserved.</p>
+    </footer>
+    <!--script-->
+    <script src="scripts.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js"></script>
+  </body>
+</html>
+
